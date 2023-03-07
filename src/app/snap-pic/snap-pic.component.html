@@ -1,0 +1,15 @@
+<div class="snap-div" [ngClass]="{snapped: buttonText==='Oops,un snap'}"> 
+    <h1>{{snapPic.title}}</h1>
+<p>pubblicato online il  {{snapPic.createdDate}} </p>
+<img [src]="snapPic.imageUrl" [alt]="snapPic.title">
+<p>{{snapPic.description}}</p>
+<p *ngIf="snapPic.location">foto scattata a {{snapPic.location}}</p>
+
+<p> 
+    <button (click)="onSnap()">{{buttonText}}</button>
+    <span [ngStyle]="{color:'rgb(0 ,'+ snapPic.snaps +',  0)'}">❤️{{snapPic.snaps}}</span></p>
+</div>
+<p>
+    
+
+</p>

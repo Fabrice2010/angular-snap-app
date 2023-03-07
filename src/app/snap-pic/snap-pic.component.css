@@ -1,0 +1,46 @@
+h1 {
+text-align: center;
+background-color: aqua;
+border: solid;
+}
+img {
+    height: 200px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px 30px;
+
+}
+button {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: lightgray 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: lightgray 0 0 5px;
+       }
+    
+    }
+    .snap-div {
+        box-sizing: border-box;
+        width: 60%;
+        margin: 20px auto;
+        padding: 10px 10px;
+        box-shadow: lightgray 4px 4px 20px;
+    }
+    .snapped {
+        background-color: rgba(lightgreen, 0.4);
+        color: darkgreen;
+        button {
+          box-shadow: lightgreen 3px 3px 7px;
+          color: darkgreen;
+          &:active {
+            box-shadow: lightgreen 0 0 5px;
+          }
+        }
+      }
